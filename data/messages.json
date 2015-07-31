@@ -1,0 +1,102 @@
+[
+    {
+        "id": 0,
+        "timeAgo": "2 HOURS AGO",
+        "imageUrl": "assets/img/msg1.png",
+        "name": "CAITLYN JENNER",
+        "snippet": "Eagles will win the NFC East",
+        "upVote": 14,
+        "downVote": 4,
+        "comments":  2
+    }, 
+    {
+        "id": 1, 
+        "timeAgo": "3 HOURS AGO", 
+        "imageUrl": "assets/img/msg2.png", 
+        "name": "Joe Buurman", 
+        "snippet": "This will be the message text. This will be the message text. This will be the message text. This will be the message text. This will be the message text. This will be the message text.",
+        "upVote": 14,
+        "downVote": 4,
+        "comments":  2
+    }, 
+    {
+        "id": 2, 
+        "timeAgo": "3 HOURS AGO", 
+        "imageUrl": "assets/img/msg1.png", 
+        "name": "CAITLYN JENNER", 
+        "snippet": "This will be the message text. This will be the message text. This will be the message text. This will be the message text. This will be the message text. This will be the message text.",
+        "upVote": 14,
+        "downVote": 4,
+        "comments":  2
+    }, 
+    {
+        "id": 3, 
+        "timeAgo": "3 HOURS AGO", 
+        "imageUrl": "assets/img/msg1.png", 
+        "name": "CAITLYN JENNER", 
+        "snippet": "This will be the message text. This will be the message text. This will be the message text. This will be the message text. This will be the message text. This will be the message text.",
+        "upVote": 14,
+        "downVote": 4,
+        "comments":  2
+    }, 
+    {
+        "id": 4, 
+        "timeAgo": "3 HOURS AGO", 
+        "imageUrl": "assets/img/msg1.png", 
+        "name": "CAITLYN JENNER", 
+        "snippet": "This will be the message text. This will be the message text. This will be the message text. This will be the message text. This will be the message text. This will be the message text.",
+        "upVote": 14,
+        "downVote": 4,
+        "comments":  2
+    }, 
+    {
+        "id": 5, 
+        "timeAgo": "3 HOURS AGO", 
+        "imageUrl": "assets/img/msg2.png", 
+        "name": "Joe Buurman", 
+        "snippet": "This will be the message text. This will be the message text. This will be the message text. This will be the message text. This will be the message text. This will be the message text.",
+        "upVote": 14,
+        "downVote": 4,
+        "comments":  2
+    }, 
+    {
+        "id": 6, 
+        "timeAgo": "3 HOURS AGO", 
+        "imageUrl": "assets/img/msg1.png", 
+        "name": "CAITLYN JENNER", 
+        "snippet": "This will be the message text. This will be the message text. This will be the message text. This will be the message text. This will be the message text. This will be the message text.",
+        "upVote": 14,
+        "downVote": 4,
+        "comments":  2
+    }, 
+    {
+        "id": 7, 
+        "timeAgo": "3 HOURS AGO", 
+        "imageUrl": "assets/img/msg2.png", 
+        "name": "Joe Buurman", 
+        "snippet": "This will be the message text. This will be the message text. This will be the message text. This will be the message text. This will be the message text. This will be the message text.",
+        "upVote": 14,
+        "downVote": 4,
+        "comments":  2
+    },
+    {
+        "id": 8,
+        "timeAgo": "3 HOURS AGO",
+        "imageUrl": "assets/img/msg2.png",
+        "name": "Joe Buurman",
+        "snippet": "Go Patriots!",
+        "upVote": 14,
+        "downVote": 4,
+        "comments":  2
+    },
+    {
+        "id": 9, 
+        "timeAgo": "4 HOURS AGO", 
+        "imageUrl": "assets/img/msg1.png", 
+        "name": "CAITLYN JENNER", 
+        "snippet": "This will be the message text. This will be the message text. This will be the message text.",
+        "upVote": 14,
+        "downVote": 4,
+        "comments":  2
+    }
+]

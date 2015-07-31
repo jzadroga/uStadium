@@ -1,0 +1,85 @@
+﻿<div class="container main-body-view">
+    <div class="row main-body">
+
+        <div class="col-md-6" ng-repeat="rows in chunkedData">
+            <div class="post-message" ng-repeat="item in rows | orderBy:orderProp">
+                
+                <!-- placeholder for new post -->
+                <div class="panel panel-default panel-message" ng-if="$index == 0 && $parent.$index == 0">
+                    <div class="panel-heading">
+                        <div class="media">
+                            <div class="media-left media-middle">
+                                <a href="#">
+                                    <img class="media-object img-rounded img-user" src="/assets/img/user-avatar.png" />
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">
+                                    <a href="#" class="action-new-post">Post</a>
+                                    Jonathan Smith
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel-body panel-message-new" ng-click="showPost($event)">
+                        <textarea placeholder="What is happening in your football life?" class="new-post"></textarea>
+                        <span class="counter">300</span>
+                    </div>
+
+                    <div class="panel-footer">
+                        <div class="row">
+                            <div class="col-xs-6 text-center">
+                                <a href="#">
+                                    <img src="/assets/img/icon-camera.png" class="message-action">
+                                </a>
+                            </div>
+                            <div class="col-xs-6 text-center">
+                                <a href="#">
+                                    <img src="/assets/img/icon-video.png" class="message-action message-action-video" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default panel-message" >
+                
+                    <!-- Default panel contents -->
+                    <div class="panel-heading">
+                        <div class="media">
+                            <div class="media-left media-middle">
+                                <a href="#">
+                                    <img class="media-object img-rounded img-user" ng-src="{{item.imageUrl}}">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">{{item.name}}</h4>
+                                <span class="media-subheading">{{item.timeAgo}}</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel-body">
+                        <p>{{item.snippet}}</p>
+                    </div>
+
+                    <div class="panel-footer">
+                        <div class="row">
+                            <div class="col-xs-4 text-center">
+                                <a href="#"><img src="/assets/img/icon-cheer.png" class="message-action">{{item.upVote}}</a>
+                            </div>
+                            <div class="col-xs-4 text-center">
+                                <a href="#"><img src="/assets/img/icon-boo.png" class="message-action">{{item.downVote}}</a>
+                            </div>
+                            <div class="col-xs-4 text-center">
+                                <a href="#"><img src="/assets/img/icon-comment.png" class="message-action action-comment">{{item.comments}}</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
