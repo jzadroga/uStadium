@@ -6,6 +6,7 @@ var ustadiumWeb = angular.module('ustadiumWeb', [
   'ngRoute',
   'ustadiumWebControllers',
   'ustadiumWebServices',
+  'ngSanitize',
   'ustadiumWeb'
 ]);
 
@@ -18,6 +19,10 @@ ustadiumWeb.config(['$routeProvider', '$locationProvider',
         when('/', {
             templateUrl: 'partials/message-list.html',
             controller: 'ActivityCtrl'
+        }).
+        when('/:messageID', {
+          templateUrl: 'partials/message-detail.html',
+          controller: 'MessageDetailCtrl'
         }).
         when('/contests', {
             templateUrl: 'partials/contests.html',

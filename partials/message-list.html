@@ -50,18 +50,18 @@
                         <div class="media">
                             <div class="media-left media-middle">
                                 <a href="#">
-                                    <img class="media-object img-rounded img-user" ng-src="{{item.imageUrl}}">
+                                    <img class="media-object img-rounded img-user" ng-src="{{item.author.profileImageThumbnail}}">
                                 </a>
                             </div>
                             <div class="media-body">
-                                <h4 class="media-heading">{{item.name}}</h4>
+                                <h4 class="media-heading" ng-bind-html="item.author.nickname"></h4>
                                 <span class="media-subheading">{{item.timeAgo}}</span>
                             </div>
                         </div>
                     </div>
 
                     <div class="panel-body">
-                        <p>{{item.snippet}}</p>
+                        <p ng-bind-html="item.text"></p>
                     </div>
 
                     <div class="panel-footer">
@@ -73,7 +73,7 @@
                                 <a href="#"><img src="/assets/img/icon-boo.png" class="message-action">{{item.downVote}}</a>
                             </div>
                             <div class="col-xs-4 text-center">
-                                <a href="#"><img src="/assets/img/icon-comment.png" class="message-action action-comment">{{item.comments}}</a>
+                                <a href="/{{item.parseObjectId}}"><img src="/assets/img/icon-comment.png" class="message-action action-comment">{{item.numComments}}</a>
                             </div>
                         </div>
                     </div>

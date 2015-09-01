@@ -20,12 +20,18 @@ ustadiumWebControllers.controller('mainCtrl', function ($scope, $rootScope, $loc
     }
 });
 
+ustadiumWebControllers.controller('MessageDetailCtrl', ['$scope', '$routeParams',
+  function ($scope, $routeParams) {
+      $scope.messageID = $routeParams.messageID;
+  }]);
+
 ustadiumWebControllers.controller('ActivityCtrl', ['$scope', 'Activity',
   function ($scope, Activity) {
       $scope.activityList = Activity.query(function divData(obj) {
-          $scope.chunkedData = chunk(obj, obj.length / 2);
+          var posts = obj.data;
+          $scope.chunkedData = chunk(posts, posts.length / 2);
       });
-      $scope.orderProp = 'id';
+      $scope.orderProp = 'createdAt';
 
       $scope.showPost = function (ev) {
           $(ev.currentTarget).addClass("expanded");
